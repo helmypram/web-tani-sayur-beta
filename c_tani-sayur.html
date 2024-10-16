@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaniSayur</title>
+  <link href="./c_tani-sayur.css" rel="stylesheet">
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* Header */
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 50px 0;
+    }
+
+    .services .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .services .col {
+      flex: 1;
+      margin: 15px;
+      text-align: center;
+    }
+
+    .services img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .services h2 {
+      margin: 15px 0;
+      font-size: 1.5rem;
+    }
+
+    .services p {
+      font-size: 1rem;
+    }
+
+    /* Recommendations Section */
+    .recommendations {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .recommendations h2 {
+      margin-bottom: 40px;
+    }
+
+    .recommendations .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .recommendations .col {
+      flex: 1;
+      margin: 15px;
+    }
+
+    .recommendations img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .recommendations h3 {
+      margin: 15px 0;
+      font-size: 1.5rem;
+    }
+
+    .recommendations p {
+      font-size: 1rem;
+    }
+
+    .recommendations a {
+      padding: 10px 20px;
+      background-color: #6c757d;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 40px 0;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer h5 {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    footer .text-center {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+      }
+
+      .services .row, .recommendations .row {
+        flex-direction: column;
+      }
+
+      .services .col, .recommendations .col {
+        margin: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="./assets/4f9dfb66dc724a24f7cf70c5217a2b90.svg" alt="TaniSayur Logo" width="75" height="37">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">LAYANAN</a></li>
+          <li><a href="#">FITUR</a></li>
+          <li><a href="#">DAFTAR</a></li>
+          <li><a href="#">MASUK</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Beli Sayur &amp; Buah Langsung Dari Petani</h1>
+        <p>TaniSayur hadir untuk mudahkan pesan sayur &amp; buah terbaik untukmu langsung dari petani dengan mudah.</p>
+        <a href="#">Pesan Sekarang</a>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="./assets/1ff58d37b421265d5c7f75a7450a8b4a.svg" alt="Layanan Kami">
+            <h2>Beli Sayur &amp; Buah</h2>
+            <p>Dapatkan sayur dan buah berkualitas &amp; fresh langsung dari petani lokal Indonesia.</p>
+          </div>
+          <div class="col">
+            <img src="./assets/a698aa90035e6557d72a13af41f9ff30.svg" alt="Jual Sayur">
+            <h2>Jual Sayur &amp; Buah</h2>
+            <p>Raih keuntungan penjualan dengan kerjasama menjadi petani TaniSayur.</p>
+          </div>
+          <div class="col">
+            <img src="./assets/6185bbdc12a09ab39887a68f3535a935.svg" alt="Gratis Pengiriman">
+            <h2>Gratis Pengiriman</h2>
+            <p>Gratis pengiriman pembelian sayur dan buah dengan limit 7x dalam sebulan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommendations">
+      <div class="container">
+        <h2>Rekomendasi Sayur &amp; Buah</h2>
+        <div class="row">
+          <div class="col">
+            <img src="./assets/64e8dc20af3f96eeab87ec91450597f0.jpg" alt="Kentang 1kg">
+            <h3>Kentang - 1kg</h3>
+            <p>RP 17.000</p>
+          </div>
+          <div class="col">
+            <img src="./assets/3d1e5ba3359d0b4a54624be8ca9595e4.jpg" alt="Pisang Cavendish 1kg">
+            <h3>Pisang Cavendish - 1kg</h3>
+            <p>RP 25.000</p>
+          </div>
+          <div class="col">
+            <img src="./assets/22d7c57b4ef9274d0bc39aa3fdce1d6a.jpg" alt="Tomat Cherry 250gr">
+            <h3>Tomat Cherry - 250gr</h3>
+            <p>RP 20.000</p>
+          </div>
+        </div>
+        <a href="#">Lihat Lainnya...</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h5>TaniSayur</h5>
+        <p>Jl. Jenderal Sudirman, Jakarta Selatan</p>
+        <p>Indonesia</p>
+      </div>
+      <div>
+        <h5>Kontak</h5>
+        <p>022-6545-2070</p>
+        <p>Halo@tanisayur.com</p>
+      </div>
+      <div>
+        <h5>Social Media</h5>
+        <p><img src="./assets/9f061942e11162da2900534a72681633.svg" alt="Social Icon" width="24"> @TaniSayur</p>
+      </div>
+    </div>
+    <div class="text-center">
+      <p>&copy; 2024 Helmy Pramudita. All Right Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
